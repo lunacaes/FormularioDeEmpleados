@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Registro de Empleados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+  <header>
+    <h1>Registro de Empleados</h1>
+  </header>
+
+  <main>
+    <h2>Diligenciar Datos</h2>
+
+    <form id = "formRegistro">
+      <label for = "nombre"> Nombre Completo: </label>
+      <input type = "text" id = "nombre" name = "nombre" placeholder = "Nombre completo" required>
+
+      <input type = "text" id = "documento" name = "documento" placeholder = "Número de Documento" required>
+      <br><br>
+
+      <label for = "cargo"> Cargo y Departamento: </label>
+      <input type = "text" id = "cargo" name = "cargo" placeholder = "Cargo del empleado" required>
+      <input type = "text" id = "departamento" name = "departamento" placeholder = "Área o departamento" required>
+      <br><br>
+
+      <label for = "correo"> Correo y Foto: </label>
+      <input type = "email" id = "correo" name = "correo" placeholder = "Correo electrónico" required>
+      <input type = "file" id = "foto" name = "foto" accept = "image/*">
+      <br><br>
+
+      <p> Vista previa de la foto: </p>
+      <img id = "preview" src = "" alt = "Aquí aparecerá la foto" style = "max-width:200px; display:none;">
+
+      <br><br>
+      <button type = "submit"> Registrar </button>
+    </form>
+  </main>
+</body>
+</html>
